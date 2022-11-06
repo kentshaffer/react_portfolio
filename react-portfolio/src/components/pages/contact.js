@@ -6,7 +6,7 @@ export default function Contact() {
       <h1>Contact</h1>
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label">Name:</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"></input>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Name"></input>
         </div>
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label">Email address:</label>

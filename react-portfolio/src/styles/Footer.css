@@ -1,0 +1,25 @@
+.footer {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+#github {
+  scale: 15%;
+  display: flex;
+  justify-content: center;
+}
+
+#linkedin {
+  scale: 15%;
+  display: flex;
+  justify-content: center;
+}
+
+#stackoverflow {
+  scale: 20%;
+  display: flex;
+  justify-content: center;
+}
