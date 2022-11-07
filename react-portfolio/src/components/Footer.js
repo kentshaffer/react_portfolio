@@ -1,33 +1,36 @@
 import React from 'react';
-import '../styles/Footer.css'
+import '../styles/Footer.css';
+import gitcat from '../Images/githubcat.png';
+import linkedin from '../Images/linkedin.webp';
+import stackoverflow from '../Images/stackoverflow.webp';
 
 function Footer() {
   return (
-    <ul className='footer'>
-      <li className='footer-item' id='github'>
+    <Footer className='footer'>
+      <div className='footer-item' id='github'>
         <a
-        target='_blank'
-        href='https://github.com/kentshaffer' rel="noreferrer">
-          <img src='../../githubcat.png' alt='github cat logo'/>
+          target='_blank'
+          href='https://github.com/kentshaffer' rel="noreferrer">
+          <img src={gitcat} alt='github cat logo' />
         </a>
-      </li>
+      </div>
 
-      <li className='footer-item' id='linkedin'>
+      <div className='footer-item' id='linkedin'>
         <a
-        target='_blank'
-        href='https://www.linkedin.com/in/kent-shaffer-2b26b795/' rel="noreferrer">
-          <img src='../../linkedin.webp' alt='linkedin logo'/>
+          target='_blank'
+          href='https://www.linkedin.com/in/kent-shaffer-2b26b795/' rel="noreferrer">
+          <img src={linkedin} alt='linkedin logo' />
         </a>
-      </li>
+      </div>
 
-      <li className='footer-item' id='stackoverflow'>
+      <div className='footer-item' id='stackoverflow'>
         <a
-        target='_blank'
-        href='https://stackoverflow.com/users/20430563/kent' rel="noreferrer">
-          <img src='../../stackoverflow.webp' alt='stack overflow logo'/>
+          target='_blank'
+          href='https://stackoverflow.com/users/20430563/kent' rel="noreferrer">
+          <img src={stackoverflow} alt='stack overflow logo' />
         </a>
-      </li>
-    </ul>
+      </div>
+    </Footer>
   )
 }
 
