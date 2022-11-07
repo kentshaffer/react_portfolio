@@ -1,12 +1,12 @@
 import React from 'react';
 import '../styles/Footer.css';
-import gitcat from '../Images/githubcat.png';
+import gitcat from '../Images/gitcat.png';
 import linkedin from '../Images/linkedin.webp';
 import stackoverflow from '../Images/stackoverflow.webp';
 
 function Footer() {
   return (
-    <Footer className='footer'>
+    <div className='footer'>
       <div className='footer-item' id='github'>
         <a
           target='_blank'
@@ -30,7 +30,7 @@ function Footer() {
           <img src={stackoverflow} alt='stack overflow logo' />
         </a>
       </div>
-    </Footer>
+    </div>
   )
 }
 
