@@ -1,12 +1,17 @@
 import React from 'react';
 
-export default function Portfolio() {
+function Portfolio(props) {
+
   return (
-    <div>
-      <h1>Portfolio</h1>
-      <p>
-        Portfolio links go here
-      </p>
-    </div>
+    <ul>
+      {props.projectArray.map((item) => {
+        return (
+          <li key={item.id}>{item.name}</li>
+          );
+        })}
+
+    </ul>
   );
 }
+
+export default Portfolio;

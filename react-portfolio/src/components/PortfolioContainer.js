@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import NavTabs from './NavTabs';
+import NavBar from './NavBar';
 import Footer from './Footer';
 import AboutMe from './pages/about-me';
 import Portfolio from './pages/portfolio';
@@ -10,27 +10,27 @@ export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('AboutMe');
 
   const renderPage = () => {
-    if (currentPage === 'AboutMe') {
-      return <AboutMe />;
+    switch (currentPage) {
+      case 'AboutMe':
+        return <AboutMe />;
+      case 'Portfolio':
+        return <Portfolio />;
+      case 'Contact':
+        return <Contact />;
+      default:
+        return <Resume />;
     }
-    if (currentPage === 'Portfolio') {
-      return <Portfolio />;
-    }
-    if (currentPage === 'Contact') {
-      return <Contact />;
-    }
-    return <Resume />;
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
     <div>
-      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+      <NavBar currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
-    <footer>
-      <Footer/>
-    </footer>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
