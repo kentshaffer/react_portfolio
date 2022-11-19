@@ -1,6 +1,6 @@
 .cardBtn {
   display: flex;
-  background-color: rgb(56, 55, 55);
+  background-color: rgb(38, 42, 45, 1);
   color: white;
   height: fit-content;
   padding: 8px;
@@ -35,7 +35,7 @@
 .cardRight {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: 500px;
   background-color: #fafafa;
   justify-content: space-between;
   border-radius: 0px 15px 15px 0px;
@@ -59,4 +59,13 @@
 .imgContainer {
   display: flex;
   z-index: 1;
+}
+
+.techList {
+  opacity: 0.7;
+}
+
+.dropBtn {
+  background-color: rgb(81, 80, 80);
+  border-color: #fafafa;
 }
