@@ -17,4 +17,7 @@
   justify-content: space-between;
   background-image: linear-gradient(white, #fafafa);
   height: 10vh;
+  width: 100vw;
+  /* position: fixed; */
+  /* z-index: 3; */
 }
