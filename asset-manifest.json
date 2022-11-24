@@ -1,15 +1,23 @@
 {
   "files": {
-    "main.css": "/react_portfolio/static/css/main.4cdd8006.css",
-    "main.js": "/react_portfolio/static/js/main.ff4949db.js",
+    "main.css": "/react_portfolio/static/css/main.9cf3b589.css",
+    "main.js": "/react_portfolio/static/js/main.e6e31396.js",
+    "static/media/gooolscreenshot.png": "/react_portfolio/static/media/gooolscreenshot.724c2cc1f460e1fe6b0b.png",
+    "static/media/profPic.jpeg": "/react_portfolio/static/media/profPic.30c0925f5f860992257c.jpeg",
+    "static/media/readmescreenshot.png": "/react_portfolio/static/media/readmescreenshot.0aac038a8b14161c43bc.png",
+    "static/media/Resume.pdf": "/react_portfolio/static/media/Resume.43e5b1fee4f1712d0285.pdf",
+    "static/media/nosqlscreenshot.png": "/react_portfolio/static/media/nosqlscreenshot.305bcd1582446a82ede1.png",
+    "static/media/fitfoodscreenshot.png": "/react_portfolio/static/media/fitfoodscreenshot.205ebb923d24f5c20da8.png",
+    "static/media/employeetrackerscreenshot.png": "/react_portfolio/static/media/employeetrackerscreenshot.f475f35e7a3cdc1518cc.png",
+    "static/media/jatescreenshot.png": "/react_portfolio/static/media/jatescreenshot.12a1b4e16ff44717a6cb.png",
     "static/media/stackoverflow.webp": "/react_portfolio/static/media/stackoverflow.a1b2c9221d30656c1232.webp",
     "static/media/linkedin.webp": "/react_portfolio/static/media/linkedin.ff9ae1cc075204594b7f.webp",
     "index.html": "/react_portfolio/index.html",
-    "main.4cdd8006.css.map": "/react_portfolio/static/css/main.4cdd8006.css.map",
-    "main.ff4949db.js.map": "/react_portfolio/static/js/main.ff4949db.js.map"
+    "main.9cf3b589.css.map": "/react_portfolio/static/css/main.9cf3b589.css.map",
+    "main.e6e31396.js.map": "/react_portfolio/static/js/main.e6e31396.js.map"
   },
   "entrypoints": [
-    "static/css/main.4cdd8006.css",
-    "static/js/main.ff4949db.js"
+    "static/css/main.9cf3b589.css",
+    "static/js/main.e6e31396.js"
   ]
 }
