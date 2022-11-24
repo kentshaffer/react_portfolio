@@ -1,12 +1,19 @@
 import React from 'react';
 import '../styles/Navbar.css'
 
+const styles = {
+  navTabs: {
+    paddingBottom: '1%',
+    borderStyle: 'none'
+  }
+}
+
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     <div className='header-div'>
       <h1 className='header-text'>Kent Shaffer</h1>
-      <ul className="nav nav-tabs">
+      <ul style={styles.navTabs} className="nav nav-tabs">
         <li className="nav-item">
           <a
             href="#aboutMe"

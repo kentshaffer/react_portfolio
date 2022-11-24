@@ -1,5 +1,44 @@
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
+import '../../styles/Contact.css';
+
+const styles = {
+  textInput: {
+    backgroundColor: 'rgb(81, 80, 80)',
+    color: 'white',
+    borderColor: 'white',
+    boxShadow: 'pink',
+  },
+  pageText: {
+    color: 'white',
+    marginBottom: '2%'
+  },
+  pageHeaderText: {
+    color: 'white',
+    marginBottom: '2%',
+    marginTop: '3%'
+  },
+  bodyContainer: {
+    backgroundColor: 'rgb(22, 22, 22)',
+    height: '100vh'
+  },
+  emailBtn: {
+    backgroundColor: 'palevioletred',
+    marginTop: '2%',
+    borderColor: 'White'
+  },
+  pageBreak: {
+    borderBottom: '0.5px',
+    borderColor: 'palevioletred',
+    borderStyle: 'solid',
+    width: '15%',
+    marginBottom: '1%',
+    marginTop: '2%'
+  },
+  formGroup: {
+    width: '60vw'
+  }
+}
 
 const Contact = () => {
   const form = useRef();
@@ -14,49 +53,58 @@ const Contact = () => {
   };
 
   return (
-    <div className='container'>
-      <div className='row'>
-        <div className='col align-self-center'>
-          <h1 className='text-center'>Contact</h1>
-          <form ref={form} onSubmit={sendEmail}>
+    <div style={styles.bodyContainer}>
+      <div className='container'>
+        <div className='row'>
+          <div className='col align-self-center'>
+            <h1 style={styles.pageHeaderText} className='text-center'>Let's Talk</h1>
+            <form ref={form} onSubmit={sendEmail}>
 
-            <div className='form-group'>
-              <label htmlFor='name'>Name</label>
-              <input
-                type='name'
-                name='name'
-                className='form-control'
-                id='name'
-                placeholder='Your name here'
-              />
-            </div>
+              <div style={styles.formGroup} className='form-group'>
+                <label style={styles.pageText} htmlFor='name'>Name</label>
+                <input
+                  style={styles.textInput}
+                  type='name'
+                  name='name'
+                  className='form-control'
+                  id='name'
+                  placeholder='Your name here'
+                />
+              </div>
 
-            <div className='form-group'>
-              <label htmlFor='email'>Email</label>
-              <input
-                type='email'
-                name='email'
-                className='form-control'
-                id='email'
-                placeholder='Your email here'
-              />
-            </div>
+              <div style={styles.pageBreak} />
 
-            <div className='form-group'>
-              <label htmlFor='message'>Message</label>
-              <textarea
-                name='message'
-                className='form-control'
-                id='message'
-                placeholder='Your message here'
-                rows='7'>
-              </textarea>
-            </div>
+              <div style={styles.formGroup} className='form-group'>
+                <label style={styles.pageText} htmlFor='email'>Email</label>
+                <input
+                  style={styles.textInput}
+                  type='email'
+                  name='email'
+                  className='form-control'
+                  id='email'
+                  placeholder='Your email here'
+                />
+              </div>
 
-            <button type='submit' className='btn btn-primary'>
-              Submit
-            </button>
-          </form>
+              <div style={styles.pageBreak} />
+
+              <div style={styles.formGroup} className='form-group'>
+                <label style={styles.pageText} htmlFor='message'>Message</label>
+                <textarea
+                  style={styles.textInput}
+                  name='message'
+                  className='form-control'
+                  id='message'
+                  placeholder='Your message here'
+                  rows='7'>
+                </textarea>
+              </div>
+
+              <button style={styles.emailBtn} id='btn' type='submit' className='btn'>
+                Submit
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </div>

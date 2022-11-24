@@ -1,0 +1,46 @@
+#message:active {
+  background-color: palevioletred;
+  box-shadow: palevioletred;
+}
+
+#resumeBtn:hover {
+  background-color: rgb(211, 151, 171);
+}
+
+#resumeBtn {
+  display: flex;
+  background-color: palevioletred;
+  color: white;
+  height: fit-content;
+  padding: 8px;
+  border-radius: 6px;
+  border-width: 1px;
+  border-color: white;
+  border-style: solid;
+  text-decoration: none;
+  justify-content: center;
+
+  width: 40vw;
+  /* margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 15px; */
+}
+
+#btnContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(22, 22, 22);
+  height: 35vh;
+}
+
+#headerText {
+  color: white;
+}
+
+#headerBox {
+  display: flex;
+  width: 100vw;
+  margin-left: 6vw;
+}
