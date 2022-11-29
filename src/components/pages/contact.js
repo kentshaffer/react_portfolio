@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
+import Alert from 'react-bootstrap/Alert'
 import '../../styles/Contact.css';
 
 const styles = {
@@ -42,10 +43,20 @@ const styles = {
 
 const Contact = () => {
   const form = useRef();
-  const sendEmail = (e) => {
-    e.preventDefault();
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    console.log(name, value);
+  };
+  const handleSubmit = (event) => {
+    event.preventDefault()
+    sendEmail()
+  }
+  const sendEmail = () => {
     emailjs.sendForm('service_81tdjek', 'template_y1q8ev9', form.current, 'Z1sec7K5MAGC0wuy3')
       .then((result) => {
+        <Alert variant='success'>
+          Message successfully sent!
+        </Alert>
         console.log(result.text);
       }, (error) => {
         console.log(error.text);
@@ -58,7 +69,7 @@ const Contact = () => {
         <div className='row'>
           <div className='col align-self-center'>
             <h1 style={styles.pageHeaderText} className='text-center'>Let's Talk</h1>
-            <form ref={form} onSubmit={sendEmail}>
+            <form ref={form} onSubmit={handleSubmit}>
 
               <div style={styles.formGroup} className='form-group'>
                 <label style={styles.pageText} htmlFor='name'>Name</label>
@@ -69,6 +80,8 @@ const Contact = () => {
                   className='form-control'
                   id='name'
                   placeholder='Your name here'
+                  onChange={handleInputChange}
+                  value={form.name}
                 />
               </div>
 
@@ -96,7 +109,10 @@ const Contact = () => {
                   className='form-control'
                   id='message'
                   placeholder='Your message here'
-                  rows='7'>
+                  rows='7'
+                  onChange={handleInputChange}
+                  value={form.message}
+                >
                 </textarea>
               </div>
 

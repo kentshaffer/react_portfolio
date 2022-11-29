@@ -132,16 +132,16 @@ function Portfolio() {
         return (
           <div className='projCard'>
             <Card className='cardLeft'>
-              <Card.ImgOverlay className='imgContainer'>
-                <Dropdown className='techDrop'>
-                  <Dropdown.Toggle className='dropBtn' style={styles.btn} variant="secondary" id="dropdown-basic">
-                    Tech Stack
-                  </Dropdown.Toggle>
-                  <Dropdown.Menu className='techList'>
-                    <Dropdown.Item>{item.techStack}</Dropdown.Item>
-                  </Dropdown.Menu>
-                </Dropdown>
-              </Card.ImgOverlay>
+                <Card.ImgOverlay className='imgContainer'>
+                  <Dropdown className='techDrop'>
+                    <Dropdown.Toggle className='dropBtn' style={styles.btn} variant="secondary" id="dropdown-basic">
+                      Tech Stack
+                    </Dropdown.Toggle>
+                    <Dropdown.Menu className='techList'>
+                      <Dropdown.Item>{item.techStack}</Dropdown.Item>
+                    </Dropdown.Menu>
+                  </Dropdown>
+                </Card.ImgOverlay>
               <img className='cardImg' src={item.screenshot} alt={item.name} />
             </Card>
             <div className='cardRight'>

@@ -9,7 +9,6 @@ export default function AboutMe() {
         <img className='profImg' src={profPic} alt='Kent smiling with white wall as background' />
         <h1 id='abt'>About Me</h1>
       </div>
-      {/* <div className='pageBreak'/> */}
       <div className='bio'>
         <p>
           Hello, my name is Kent Shaffer. I have recently joined the growing population of
