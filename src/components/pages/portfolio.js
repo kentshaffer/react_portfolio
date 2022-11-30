@@ -9,6 +9,7 @@ import goool from '../../Images/gooolscreenshot.png';
 import readme from '../../Images/readmescreenshot.png';
 import mysql from '../../Images/employeetrackerscreenshot.png';
 import fitfood from '../../Images/fitfoodscreenshot.png';
+import instafood from '../../Images/instafoodscreenshot.png'
 
 const styles = {
   btn: {
@@ -21,7 +22,31 @@ function Portfolio() {
 
   const projectArray = [
     {
-      id: 1,
+      id: 7,
+      name: 'Instafood',
+      screenshot: instafood,
+      deployment: 'https://frozen-chamber-50604.herokuapp.com/',
+      githubLink: 'https://github.com/CMolitor96/instacook',
+      description: 'Instacook is a recipe sharing app. It features user authentication for users to save a collection of their own created/shared recipes,  as well as delete their own posts if needed. Shared recipes are public and anyone with an account can access posted recipes.',
+      techStack:
+        <ul>
+          <li>React.js</li>
+          <li>JavaScript</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>React-Bootstrap</li>
+          <li>Node.js</li>
+          <li>Express.js</li>
+          <li>GraphQL</li>
+          <li>Apollo-Server</li>
+          <li>MongoDB/Mongoose</li>
+          <li>JWT</li>
+          <li>Bcrypt</li>
+          <li>Heroku</li>
+        </ul>
+    },
+    {
+      id: 6,
       name: 'Text Editor PWA',
       screenshot: jate,
       deployment: 'https://bloodcurdling-citadel-38215.herokuapp.com/',
@@ -40,7 +65,7 @@ function Portfolio() {
         </ul>
     },
     {
-      id: 2,
+      id: 5,
       name: 'NoSQL Social Network API',
       screenshot: nosql,
       deployment: 'https://watch.screencastify.com/v/Q7s7704JF2KXaKCuMijH',
@@ -57,7 +82,7 @@ function Portfolio() {
         </ul>
     },
     {
-      id: 3,
+      id: 4,
       name: '¡GOOOL!',
       screenshot: goool,
       deployment: 'https://secure-shore-30155.herokuapp.com/',
@@ -78,7 +103,7 @@ function Portfolio() {
         </ul>
     },
     {
-      id: 4,
+      id: 3,
       name: 'Readme Generator',
       screenshot: readme,
       deployment: 'https://watch.screencastify.com/v/T12ivU6w7XIw3Ewxp72S',
@@ -92,7 +117,7 @@ function Portfolio() {
         </ul>
     },
     {
-      id: 5,
+      id: 2,
       name: 'MySQL Employee Tracker',
       screenshot: mysql,
       deployment: 'https://watch.screencastify.com/v/1LvWeXS5shUZ5VmkIfij',
@@ -109,7 +134,7 @@ function Portfolio() {
         </ul>
     },
     {
-      id: 6,
+      id: 1,
       name: 'Fit Food',
       screenshot: fitfood,
       deployment: 'https://kevinumayam.github.io/Fit-Food/',
@@ -132,8 +157,12 @@ function Portfolio() {
         return (
           <div className='projCard'>
             <Card className='cardLeft'>
-                <Card.ImgOverlay className='imgContainer'>
-                  <Dropdown className='techDrop'>
+              <img className='cardImg' src={item.screenshot} alt={item.name} />
+            </Card>
+            <div className='cardRight'>
+              <div id='cardHeader'>
+                <h4 className='projTitle'>{item.name}</h4>
+                <Dropdown className='techDrop'>
                     <Dropdown.Toggle className='dropBtn' style={styles.btn} variant="secondary" id="dropdown-basic">
                       Tech Stack
                     </Dropdown.Toggle>
@@ -141,12 +170,8 @@ function Portfolio() {
                       <Dropdown.Item>{item.techStack}</Dropdown.Item>
                     </Dropdown.Menu>
                   </Dropdown>
-                </Card.ImgOverlay>
-              <img className='cardImg' src={item.screenshot} alt={item.name} />
-            </Card>
-            <div className='cardRight'>
-              <h4 className='projTitle'>{item.name}</h4>
-              <p>{item.description}</p>
+              </div>  
+              <p className='desc'>{item.description}</p>
               <div className='projBtns'>
                 <a className='cardBtn'
                   target='_blank'
