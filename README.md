@@ -16,6 +16,8 @@ Created a React.js portfolio to serve as a sample of my development ability for 
 
 [About the author](#about-the-author)
 
+[Link to deployed app](#link-to-deployed-app)
+
 [Screenshots of app](#screenshots-of-app)
 
 ---
@@ -57,6 +59,11 @@ Created a React.js portfolio to serve as a sample of my development ability for 
 My name is Kent Shaffer and I am a recent graduate of UCSD's full stack web development bootcamp. Prior to starting the program I had zero code experience, so it feels I've been drinking in new information through a fire hose, but I have been loving learning, and I'm excited about all the possibilities that live within the scope of the technologies I have been learning.
 
 If you have any questions, or would like to get in contact, I can be reached at kentshaff@gmail.com 
+
+---
+
+## Link to deployed app: 
+(https://kentshaffer.github.io/react_portfolio/)
 
 ---
 
