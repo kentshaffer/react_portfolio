@@ -12,8 +12,7 @@ export default function AboutMe() {
       <div className='bio'>
         <p>
           Hello, my name is Kent Shaffer. I have recently joined the growing population of
-          developers. I am a student in the UCSD extension coding bootcamp and will complete
-          my certificate in November of 2022.
+          developers. I earned a Certificate in Full Stack Web Development from UCSD in November 2022.
         </p>
         <div className='pageBreak'/>
         <p>
@@ -27,8 +26,8 @@ export default function AboutMe() {
         </p>
         <div className='pageBreak'/>
         <p>
-          Away from the screen, I enjoy cooking, cycling, and rock climbing. I am also days away from embarking on the journey of
-          fatherhood, and am overjoyed to experience the adventures that being a parent will bring.
+          Away from the screen, I enjoy cooking, cycling, and rock climbing. I also just welcomed a daughter into the world December 2022
+          and am excited to embark on the journey of fatherhood, and am overjoyed to experience the adventures that being a parent will bring.
         </p>
       </div>
     </div>

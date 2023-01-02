@@ -35,8 +35,14 @@
   height: 35vh;
 }
 
-#headerText {
+#headerText, #emailMsg {
   color: white;
+}
+
+#emailBox {
+  padding-top: 2vh;
+  font-size: large;
+  width: 60vw;
 }
 
 #headerBox {

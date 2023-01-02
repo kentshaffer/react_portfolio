@@ -63,6 +63,11 @@ const Contact = () => {
       });
   };
 
+  // const ChangeText = () => {
+  //   document.getElementById("text").innerHTML = "Hello World";
+  //   const [buttonText, setButtonText] = useState('Click me');
+  
+
   return (
     <div style={styles.bodyContainer}>
       <div className='container'>
@@ -120,6 +125,11 @@ const Contact = () => {
                 Submit
               </button>
             </form>
+            {/* <button onclick={ChangeText}>{buttonText}</button>
+            <p id="text"></p> */}
+            <div id='emailBox'>
+              <p id='emailMsg'>Feel free to easily send me a contact message using the contact form, or save my information and email me later at kentshaff@gmail.com</p>
+            </div>
           </div>
         </div>
       </div>
